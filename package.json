@@ -1,11 +1,9 @@
 {
   "name": "dashexpress",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Handling all the Express boilerplate with easy-outs.",
   "main": "index.js",
-  "scripts": {
-    "postinstall": "node postinstall.js"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/haseebnqureshi/dashex.git"

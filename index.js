@@ -69,6 +69,15 @@ var lib = {
 		fs.ensureDirSync(filepath);
 	},
 
+	moveHelpers: function() {
+		try {
+			var from = path.resolve(__dirname, 'dashex');
+			var to = path.resolve(defaults.dirname, 'dashex');
+			fs.moveSync(from, to, { overwrite: true });
+		}
+		catch (err) { }
+	},
+
 	publicFilepath: function() {
 		var filepath = path.resolve(defaults.dirname, defaults.publicDir);
 		this.ensureFolder(filepath);
@@ -91,6 +100,7 @@ var api = function() {
 	lib.configurePublic();
 	lib.configureSessions();
 	lib.configureParsers();
+	lib.moveHelpers();
 
 	return {
 
