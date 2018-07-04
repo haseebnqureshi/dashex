@@ -1,6 +1,7 @@
 'use strict';
 
 var _ = require('underscore');
+var fs = require('fs-extra');
 var express = require('express');
 var app = express();
 var path = require('path');
@@ -64,12 +65,20 @@ var lib = {
 		app.set('views', this.viewsFilepath());
 	},
 
+	ensureFolder: function(filepath) {
+		fs.ensureDirSync(filepath);
+	},
+
 	publicFilepath: function() {
-		return path.resolve(defaults.dirname, defaults.publicDir);
+		var filepath = path.resolve(defaults.dirname, defaults.publicDir);
+		this.ensureFolder(filepath);
+		return filepath;
 	},
 
 	viewsFilepath: function() {
-		return path.resolve(defaults.dirname, defaults.viewsDir);
+		var filepath = path.resolve(defaults.dirname, defaults.viewsDir);
+		this.ensureFolder(filepath);
+		return filepath;
 	}
 
 };
