@@ -1,0 +1,79 @@
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+button { 
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	font-size: 14px;
+	letter-spacing: -0.01em;
+	color: #fff;
+	background: #133344;
+    border: solid 10px #fff;
+}
+
+input {
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: #fff;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.uk-text-muted {
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	letter-spacing: -0.03em;
+	color: #fff;
+}
+
+h1 {
+	font-size: 3.3rem;
+}
+
+h2 {
+	font-size: 2.2rem;
+}
+
+h5,
+h6 {
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+h6 {
+	letter-spacing: 0.1em;
+	font-size: 0.75rem;
+}
+
+.uk-button {
+    font-weight: 700;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+
+.uk-container-small {
+    max-width: 800px;
+}
+
+.small-margin * {
+	margin: 10px 0px;
+}
