@@ -12,7 +12,7 @@ For (1) quickly spinning up alpha projects, (2) without worry about keeping your
 
 ### Getting Started - Easy Start
 ```
-var dashex = require('dashexpress')(__dirname);
+var dashex = require('dashexpress')();
 
 var app = dashex.app; //remember, js 'points' to the our dashex.app object, so we're not creating more overhead here
 
@@ -42,7 +42,19 @@ var defaults = {
 	viewEngine: 'pug' /* instead of overriding views configuration, setting our application's view engine */
 };
 
-var dashex = require('dashexpress')(__dirname, options);
+var dashex = require('dashexpress')(options);
+```
+
+### Public and Views Directories
+By default, DashEX will create your ```public``` and ```views``` directories, for your static assets and template views respectively. If you want to bypass this behavior, simply pass empty strings to both ```publicDir``` and ```viewsDir``` options.
+
+```
+var defaults = {
+	publicDir: ''
+	viewsDir: ''
+};
+
+var dashex = require('dashexpress')(options);
 ```
 
 ### Methods

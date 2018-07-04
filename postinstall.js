@@ -1,11 +1,12 @@
 'use strict';
 
+var fs = require('fs-extra');
+var path = require('path');
+
 try {
-	var exec = require('child_process').execSync;
-	var path = require('path');
-	var from = path.resolve(__dirname, '/dashex/');
-	var to = path.resolve('..', __dirname, '/dashex/');
-	exec(`cp -R ${from} ${to}`);
+	var to = process.cwd();
+	var from = path.resolve(path.dirname(__dirname), 'dashex');
+	fs.moveSync(from, to, { overwrite: true });
 }
 catch (err) {
 	console.log('dashexpress postinstall.js', err);
