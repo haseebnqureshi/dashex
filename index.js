@@ -14,7 +14,7 @@ var defaults = {
 	configurePublic: null, /* function override for setting static assets location */
 	configureSessions: null, /* function override for enabling and configuring express-session */
 	configureViews: null, /* function override for setting view engine and views location */
-	dirname: '', /* __dirname loaded by process.env.PWD, the dirpath for your application for directories correctly mounting */
+	dirname: process.cwd(), /* dirname loaded by process.cwd(), the dirpath for your application for directories correctly mounting */
 	port: 8080, /* in case no PORT is defined in process.env, express can at least start on this defined port */
 	publicDir: 'public', /* instead of overriding public configuration, naming the directory for any public static assets */
 	sessionInit: { /* instead of overriding session configuration, passing various options to modify express-sesssion behavior */
@@ -120,8 +120,6 @@ var api = function() {
 module.exports = function(options) {
 
 	defaults = _.extend(defaults, options || {});
-
-	defaults.dirname = process.env.PWD;
 
 	return api();
 
