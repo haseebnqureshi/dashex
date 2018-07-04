@@ -41,6 +41,7 @@ var lib = {
 	},
 
 	configurePublic: function() {
+		if (this.publicDir === '') { return; }
 		if (_.isFunction(defaults.configurePublic)) {
 			return defaults.configurePublic();
 		}
@@ -55,6 +56,7 @@ var lib = {
 	},
 
 	configureViews: function() {
+		if (this.viewsDir === '') { return; }
 		if (_.isFunction(defaults.configureViews)) {
 			return defaults.configureViews();
 		}
