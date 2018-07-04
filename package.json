@@ -1,6 +1,6 @@
 {
   "name": "dashexpress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {},
@@ -14,8 +14,8 @@
   "homepage": "https://github.com/haseebnqureshi/dashex#readme",
   "keywords": [
     "express",
-    "auth",
-    "google"
+    "boilerplate",
+    "dash"
   ],
   "author": "Haseeb Qureshi",
   "license": "MIT",
