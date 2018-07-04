@@ -1,6 +1,6 @@
 'use strict';
 
-var fs = require('fs-extra');
+var exec = require('child_process').execSync;
 var from = __dirname + '/dashdb/';
 var to = `${process.env.PWD}/dashdb/`;
-fs.move(from, to, { overwrite: true });
+exec(`cp -R ${from} ${to}`);
