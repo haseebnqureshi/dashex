@@ -1,6 +1,6 @@
 {
   "name": "dashexpress",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Handling all the Express boilerplate with easy-outs.",
   "main": "index.js",
   "scripts": {
