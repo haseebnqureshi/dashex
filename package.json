@@ -1,0 +1,31 @@
+{
+  "name": "dashexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haseebnqureshi/dashex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haseebnqureshi/dashex/issues"
+  },
+  "homepage": "https://github.com/haseebnqureshi/dashex#readme",
+  "keywords": [
+    "express",
+    "auth",
+    "google"
+  ],
+  "author": "Haseeb Qureshi",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "pug": "^2.0.3",
+    "underscore": "^1.9.1"
+  }
+}
