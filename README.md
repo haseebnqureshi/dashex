@@ -2,17 +2,18 @@ Handling all the Express boilerplate with easy-outs.
 
 # DashEX
 
-![npm monthly downloads](https://img.shields.io/npm/dm/dashexpress.svg)
+![npm monthly downloads](https://img.shields.io/npm/dm/dashex.svg)
 ![github license](https://img.shields.io/github/license/haseebnqureshi/dashex.svg)
 
-### npm install dashexpress --save
+### npm install dashex --save
+(Thank you NPM!)
 
 ### Purpose & Features
 For (1) quickly spinning up alpha projects, (2) without worry about keeping your boilerplate simple, concise and consistent between projects, (3) full access to lower level dependencies, giving you 100% power and flexibility, (4) authentication strategies and view components to come.
 
 ### Getting Started - Easy Start
 ```
-var dashex = require('dashexpress')();
+var dashex = require('dashex')();
 
 var app = dashex.app; //remember, js 'points' to the our dashex.app object, so we're not creating more overhead here
 
@@ -42,7 +43,7 @@ var defaults = {
 	viewEngine: 'pug' /* instead of overriding views configuration, setting our application's view engine */
 };
 
-var dashex = require('dashexpress')(options);
+var dashex = require('dashex')(options);
 ```
 
 ### Public and Views Directories
@@ -54,7 +55,7 @@ var defaults = {
 	viewsDir: ''
 };
 
-var dashex = require('dashexpress')(options);
+var dashex = require('dashex')(options);
 ```
 
 ### Methods
